@@ -51,7 +51,7 @@ class CephOsdProvider(RelationBase):
             service = conversation.scope
             auth = self.requested_auth(service)
             if auth is None:
-                yield service, auth
+                yield service
 
     def requested_auth(self, service):
         """
